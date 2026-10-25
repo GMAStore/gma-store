@@ -5,7 +5,7 @@ export const CONFIG = {
   // 1) Tempel URL Web App Apps Script Anda (berakhiran /exec). Contoh:
   //    'https://script.google.com/macros/s/AKfycbwczxShIaNoY8CWmgL-zkIlVMSrRN9CJr77lwbZgvMovK0PJ493Jw51FbJJYu2lzOdl/exec'
   //    Dikosongkan = mode pengembangan lokal (memakai server contoh di /api).
-  GAS_URL: '',
+  GAS_URL: 'https://script.google.com/macros/s/AKfycbwczxShIaNoY8CWmgL-zkIlVMSrRN9CJr77lwbZgvMovK0PJ493Jw51FbJJYu2lzOdl/exec',
 
   // 2) Nama & alamat situs (dipakai untuk judul tab, tautan berbagi, dan SEO).
   NAMA: 'GMA Store',
