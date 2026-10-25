@@ -1,0 +1,75 @@
+/* GMA Store — design tokens. Semua warna berupa variabel agar bisa diganti per tema/komunitas. */
+:root {
+  --primer: #5B4BFF;
+  --primer-tua: #4437D6;
+  --primer-muda: #ECEAFF;
+  --di-primer: #ffffff;
+  --hangat: #FF7A1A;
+  --segar: #00C2A8;
+  --kasih: #FF4D8D;
+  --peringatan: #FFB800;
+  --bahaya: #E5384F;
+
+  --teks: #1B1B2F;
+  --teks-2: #5E5E78;
+  --garis: #E4E4F0;
+  --latar: #F6F6FB;
+  --kartu: #FFFFFF;
+  --kartu-2: #F6F6FB;
+  --lapis: rgba(27, 27, 47, .55);
+
+  --s-ok-bg: #D9F7F2; --s-ok-tx: #007A69;
+  --s-tunggu-bg: #FFF3CC; --s-tunggu-tx: #8A6100;
+  --s-proses-bg: #E6E3FF; --s-proses-tx: #3A2FD1;
+  --s-gagal-bg: #FDE3E7; --s-gagal-tx: #B3213A;
+  --s-draf-bg: #ECECF5; --s-draf-tx: #55556F;
+  --s-escrow-bg: #FFF0E3; --s-escrow-tx: #B8530A;
+
+  --font-judul: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-isi: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+
+  --r-sm: 8px; --r: 12px; --r-lg: 16px; --r-xl: 24px; --r-pil: 999px;
+  --bayang-1: 0 1px 2px rgba(27, 27, 47, .06), 0 1px 3px rgba(27, 27, 47, .08);
+  --bayang-2: 0 4px 12px rgba(27, 27, 47, .08), 0 2px 4px rgba(27, 27, 47, .06);
+  --bayang-3: 0 12px 32px rgba(27, 27, 47, .16);
+
+  --sp-1: 4px; --sp-2: 8px; --sp-3: 12px; --sp-4: 16px; --sp-5: 24px; --sp-6: 32px; --sp-7: 48px; --sp-8: 64px;
+  --tinggi-header: 64px; --lebar-sidebar: 248px; --tinggi-bottom: 60px;
+  --maks: 1240px;
+  --durasi: 180ms; --ease: cubic-bezier(.2, .7, .2, 1);
+  color-scheme: light;
+}
+
+[data-theme="dark"] {
+  --primer: #7C70FF;
+  --primer-tua: #9A90FF;
+  --primer-muda: #2A2656;
+  --di-primer: #0f0d26;
+  --teks: #F2F2FA;
+  --teks-2: #A9A9C4;
+  --garis: #2E2E48;
+  --latar: #12121F;
+  --kartu: #1C1C30;
+  --kartu-2: #23233B;
+  --lapis: rgba(0, 0, 0, .65);
+  --s-ok-bg: #0E3A34; --s-ok-tx: #6FE8D4;
+  --s-tunggu-bg: #3F3200; --s-tunggu-tx: #FFD866;
+  --s-proses-bg: #2A2656; --s-proses-tx: #B8B0FF;
+  --s-gagal-bg: #4A1822; --s-gagal-tx: #FF9AAA;
+  --s-draf-bg: #2A2A40; --s-draf-tx: #B4B4CC;
+  --s-escrow-bg: #442A12; --s-escrow-tx: #FFB26B;
+  --bayang-1: 0 1px 2px rgba(0, 0, 0, .4);
+  --bayang-2: 0 4px 12px rgba(0, 0, 0, .45);
+  --bayang-3: 0 12px 32px rgba(0, 0, 0, .6);
+  color-scheme: dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]):not([data-theme="dark"]) {
+    --primer: #7C70FF; --primer-tua: #9A90FF; --primer-muda: #2A2656; --di-primer: #0f0d26;
+    --teks: #F2F2FA; --teks-2: #A9A9C4; --garis: #2E2E48; --latar: #12121F; --kartu: #1C1C30; --kartu-2: #23233B; --lapis: rgba(0, 0, 0, .65);
+    --s-ok-bg: #0E3A34; --s-ok-tx: #6FE8D4; --s-tunggu-bg: #3F3200; --s-tunggu-tx: #FFD866; --s-proses-bg: #2A2656; --s-proses-tx: #B8B0FF;
+    --s-gagal-bg: #4A1822; --s-gagal-tx: #FF9AAA; --s-draf-bg: #2A2A40; --s-draf-tx: #B4B4CC; --s-escrow-bg: #442A12; --s-escrow-tx: #FFB26B;
+    color-scheme: dark;
+  }
+}

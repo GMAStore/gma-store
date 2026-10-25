@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <script>
+    // Folder dasar (GitHub Pages proyek: /nama-repo/). Tanpa ini, alamat relatif pecah saat alamat diganti router.
+    (function () {
+      var akar = ['cari','kategori','produk','toko','live','flash-sale','h','verifikasi','masuk','daftar','lupa-sandi','keranjang','checkout','bayar','pesanan','ulasan','chat','wishlist','alamat','notifikasi','akun','apresiasi','dokumen','jual','penjual','admin','kurir','offline','index.html','404.html'];
+      var seg = location.pathname.split('/')[1] || '';
+      var base = (/\.github\.io$/.test(location.hostname) && seg && akar.indexOf(seg) < 0) ? '/' + seg : '';
+      document.write('<base href="' + base + '/">');
+    })();
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>GMA Store — Belanja & live shopping komunitas</title>
+  <meta name="description" content="Belanja dari banyak toko dalam satu keranjang, nonton live shopping, dan bayar aman lewat rekening bersama sampai barang diterima.">
+  <meta name="theme-color" content="#5B4BFF">
+  <meta property="og:type" content="website"><meta property="og:site_name" content="GMA Store">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/ikon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/ikon-192.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap">
+  <link rel="stylesheet" href="css/tokens.css"><link rel="stylesheet" href="css/base.css"><link rel="stylesheet" href="css/components.css"><link rel="stylesheet" href="css/layout.css">
+  <script>
+    // Pulihkan alamat yang dialihkan dari 404.html sebelum modul dimuat
+    (function () { try { var r = sessionStorage.getItem('gma-redirect'); if (r) { sessionStorage.removeItem('gma-redirect'); history.replaceState(null, '', r); } } catch (e) {} })();
+    // Mulai tema tanpa berkedip
+    (function () { try { var t = JSON.parse(localStorage.getItem('gma1:tema') || '"auto"'); if (t === 'gelap') document.documentElement.dataset.theme = 'dark'; else if (t === 'terang') document.documentElement.dataset.theme = 'light'; } catch (e) {} })();
+  </script>
+</head>
+<body>
+  <noscript><div style="padding:24px;font-family:sans-serif">GMA Store membutuhkan JavaScript. Aktifkan JavaScript di peramban Anda.</div></noscript>
+  <div id="app" aria-live="polite"><div class="wadah seksi" style="padding-top:20vh;text-align:center"><div class="skel" style="height:14px;width:160px;margin:0 auto"></div></div></div>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

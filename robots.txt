@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /penjual
+Disallow: /kurir
+Disallow: /checkout
+Disallow: /akun
+# Sitemap: https://NAMA.github.io/NAMA-REPO/sitemap.xml  (isi setelah situs online; sitemap dibuat oleh Apps Script: GAS_URL?sitemap)

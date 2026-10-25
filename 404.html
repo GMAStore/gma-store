@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Memuat…</title>
+<script>
+  // GitHub Pages tidak punya "rewrite": alamat dalam-aplikasi (mis. /produk/sepatu) jatuh ke sini.
+  // Simpan alamat asli lalu kembali ke index.html — router akan memulihkannya.
+  (function () {
+    var akar = ['cari','kategori','produk','toko','live','flash-sale','h','verifikasi','masuk','daftar','lupa-sandi','keranjang','checkout','bayar','pesanan','ulasan','chat','wishlist','alamat','notifikasi','akun','apresiasi','dokumen','jual','penjual','admin','kurir','offline'];
+    var seg = location.pathname.split('/')[1] || '';
+    var base = (/\.github\.io$/.test(location.hostname) && seg && akar.indexOf(seg) < 0) ? '/' + seg : '';
+    try { sessionStorage.setItem('gma-redirect', location.pathname + location.search + location.hash); } catch (e) {}
+    location.replace(location.origin + base + '/');
+  })();
+</script></head><body><p style="font-family:sans-serif;padding:24px">Memuat… <a href="/">Klik di sini bila tidak berpindah.</a></p></body></html>
